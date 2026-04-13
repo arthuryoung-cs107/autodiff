@@ -4,3 +4,9 @@
 [submodule "luna-passa"]
 	path = luna-passa
 	url = git@github.com:weyesians/luna-passa.git
+[submodule "python_scripts/autograd"]
+	path = python_scripts/autograd
+	url = git@github.com:HIPS/autograd.git
+[submodule "matlab_scripts/MATLABAutoDiff"]
+	path = matlab_scripts/MATLABAutoDiff
+	url = git@github.com:sehyoun/MATLABAutoDiff.git
