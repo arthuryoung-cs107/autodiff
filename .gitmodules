@@ -1,3 +1,6 @@
 [submodule "cs107-FinalProject"]
 	path = cs107-FinalProject
 	url = git@github.com:Cache-Money404/cs107-FinalProject.git
+[submodule "luna-passa"]
+	path = luna-passa
+	url = git@github.com:weyesians/luna-passa.git
