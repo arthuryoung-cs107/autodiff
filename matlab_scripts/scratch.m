@@ -1,3 +1,28 @@
+classdef mobject
+    properties
+        val;
+        der;
+    end
+    methods
+    function obj = mobject(val_,der_)
+        obj.val = val_;
+        obj.der = der_;
+    end
+    function obj_out = plus(obj1_,obj2_)
+        obj_out = mobject( ...
+        obj1_.val+obj2_.val, ...
+        obj1_.der+obj2_.der );
+    end
+    function obj_out = times(obj1_,obj2_)
+        obj_out = mobject( ...
+        obj1_.val*obj2_.val, ...
+        obj1_.der*obj2_.val+obj1_.val*obj2_.der );
+    end
+
+
+
+end
+
 function [u,Dx_u] = rosenbrock(x)
     f = @(x_) (1-x_(1))^2+100*(x_(2)-x_(1)^2)^2;
     u = f(x); % u = f(x)
